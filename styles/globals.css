@@ -1,5 +1,7 @@
 html,
 body {
+  position: relative;
+  top:0;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -13,4 +15,100 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.navbar{
+  padding: 20px 10px 20px 10px;
+  width: 100%;
+  background-color: rgb(17, 231, 35);
+}
+.flashcard{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  background-color: rgb(212, 212, 212);
+  width: 40%;
+  padding-bottom: 4em;
+}
+.flashcard button{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  left: 96%;
+  bottom: 8%;
+  width:2em;
+  padding:1em 1.5em 1em 1.5em;
+  float: right;
+}
+.flashcard h2 {
+  display: flex;
+  justify-content: center;
+}
+#profile-page{
+  margin-top:20px;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(236, 236, 236);
+  width: 30%;
+  padding: 2em 0em 2em 0em;
+  margin-bottom: 1em;
+}
+.delete-button{
+  position: relative;
+  bottom:186px;
+  left:49%;
+  background-color: rgb(46, 46, 46);
+  color:rgb(219, 219, 219);
+  padding: 1em;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: 1s;
+}
+
+.delete-button:hover{
+  background-color: red;
+}
+.card-container{
+  margin-top:5em;
+  margin-left: 1em;
+}
+.card{
+  margin-bottom: 80px;
+  width: 40%;
+  box-shadow: 10px 5px 5px rgb(53, 53, 53);;
+}
+.edit-button{
+  display: flex;
+  position: relative;
+  left:36%;
+  bottom: 15.5em;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: rgb(184, 184, 184);
+  transition: .5s;
+}
+
+.edit-button:hover{
+  bottom:16em;
+  box-shadow: 10px 5px 5px rgb(53, 53, 53);;
+}
+
+.edit-form{
+  display: relative;
+  z-index: 999;
+
+}
+
+.hidden{
+  display: none;
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }
